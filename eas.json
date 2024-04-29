@@ -1,0 +1,45 @@
+{
+  "cli": {
+    "version": ">= 3.10.0"
+  },
+  "build": {
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "channel": "development-simulator"
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium",
+        "cocoapods": "1.12.0"
+      },
+      "env": {
+        "APP_VARIANT": "development"
+      },
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium",
+        "cocoapods": "1.12.0"
+      },
+      "channel": "preview"
+    },
+    "production": {
+      "ios": {
+        "resourceClass": "m-medium",
+        "cocoapods": "1.12.0"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
